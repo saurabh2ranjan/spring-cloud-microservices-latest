@@ -1,0 +1,51 @@
+http://localhost:8888/product-service/default
+
+```
+{
+    "name": "product-service",
+    "profiles": [
+        "default"
+    ],
+    "label": null,
+    "version": "e40bd379101ec860378eecf2e40c65b2745ec00a",
+    "state": null,
+    "propertySources": [
+        {
+            "name": "https://github.com/javaHelper/microservices-config-server/file:C:\\Users\\pc\\AppData\\Local\\Temp\\config-repo-8472806513291709286\\product-service.properties",
+            "source": {
+                "test.name": "test1"
+            }
+        }
+    ]
+}
+```
+
+http://localhost:8888/product-service/prod
+
+
+```
+{
+    "name": "product-service",
+    "profiles": [
+        "prod"
+    ],
+    "label": null,
+    "version": "e40bd379101ec860378eecf2e40c65b2745ec00a",
+    "state": null,
+    "propertySources": [
+        {
+            "name": "https://github.com/javaHelper/microservices-config-server/file:C:\\Users\\pc\\AppData\\Local\\Temp\\config-repo-8472806513291709286\\product-service.properties",
+            "source": {
+                "test.name": "test1"
+            }
+        }
+    ]
+}
+```
+
+
+http://localhost:53911/api/test
+
+```
+test1
+```
