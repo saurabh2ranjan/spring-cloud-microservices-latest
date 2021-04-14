@@ -49,3 +49,18 @@ http://localhost:53911/api/test
 ```
 test1
 ```
+
+```
+curl -X POST \
+  http://localhost:8900/api/product \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: c49cc7ad-325e-32fe-9a7d-f37fb8b1be73' \
+  -d '{
+	"name" : "iPhone 12",
+	"description" : "iPhone 12 Gold",
+	"price": 1230
+}'
+```
+
+GET => http://localhost:8900/api/product

@@ -1,10 +1,11 @@
-package com.programming.techie.productservice.controller;
+package com.programming.techie.controller;
 
-import com.programming.techie.productservice.model.Product;
-import com.programming.techie.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import com.programming.techie.model.Product;
+import com.programming.techie.repository.ProductRepository;
 
 import java.util.List;
 

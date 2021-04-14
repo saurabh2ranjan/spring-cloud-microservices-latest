@@ -1,4 +1,4 @@
-package com.programming.techie.productservice;
+package com.programming.techie;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

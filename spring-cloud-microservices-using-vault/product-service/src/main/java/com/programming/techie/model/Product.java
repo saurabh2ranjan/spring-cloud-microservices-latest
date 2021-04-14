@@ -1,4 +1,4 @@
-package com.programming.techie.productservice.model;
+package com.programming.techie.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
