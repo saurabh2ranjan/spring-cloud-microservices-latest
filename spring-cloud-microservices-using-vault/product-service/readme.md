@@ -64,3 +64,5 @@ curl -X POST \
 ```
 
 GET => http://localhost:8900/api/product
+
+POST => http://localhost:61042/actuator/refreshbus
