@@ -44,7 +44,7 @@ http://localhost:8888/product-service/prod
 ```
 
 
-http://localhost:53911/api/test
+http://localhost:8081/api/test
 
 ```
 test1
@@ -65,4 +65,8 @@ curl -X POST \
 
 GET => http://localhost:8900/api/product
 
-POST => http://localhost:61042/actuator/refreshbus
+POST => http://localhost:8081/actuator/refreshbus
+
+# Swagger URL
+
+http://localhost:8081/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config

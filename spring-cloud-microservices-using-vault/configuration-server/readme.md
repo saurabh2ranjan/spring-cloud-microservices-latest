@@ -79,7 +79,7 @@ http://localhost:8888/product-service/default
 
 ```
 C:\Users\pc\Documents\workspace-MS\order-service
-λ 	
+λ vault kv put secret/order-service @order-service.json	
 Key              Value
 ---              -----
 created_time     2021-04-13T14:24:43.7058846Z
