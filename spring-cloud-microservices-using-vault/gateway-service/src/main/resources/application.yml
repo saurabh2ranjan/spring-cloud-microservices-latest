@@ -6,6 +6,7 @@ spring:
     name: API-GATEWAY
   cloud:
     gateway:
+      default-filters:      - TokenRelay
       routes:
       - id: product-service
         uri: lb://product-service
@@ -19,3 +20,13 @@ spring:
     config:
       enabled: true
       uri: http://localhost:8888
+  security:    oauth2:      client:        provider:          keycloak: 
+            issuer-uri: http://localhost:8180/auth/realms/microservices-realm
+        registration:          spring-cloud-gatway-client:
+            client-id: spring-cloud-gatway-client
+            client-secret: d449eaa7-cf72-419b-83e5-afb3c7019a94
+            provider: keycloak
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8900/login/oauth2/code/spring-cloud-gateway-client
+            
+            

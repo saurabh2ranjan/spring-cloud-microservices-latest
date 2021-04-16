@@ -136,3 +136,12 @@ Key                        Value
 ---                        -----
 spring.data.mongodb.uri    mongodb://localhost:27017/product-service
 ```
+
+
+
+> start the keyclock - 
+
+C:\Users\pc\Desktop\Microservices Softwares\keycloak-12.0.4\keycloak-12.0.4\bin
+λ standalone.bat -Djboss.http.port=8180
+
+http://localhost:8081
