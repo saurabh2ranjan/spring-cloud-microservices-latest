@@ -48,3 +48,6 @@ http://localhost:8081
 4) product-service (make sure MongoDB is up)
 5) gateway-service
 `
+
+![Diagram](https://user-images.githubusercontent.com/54174687/115062603-26890200-9f08-11eb-94e3-c58e32f4581d.PNG)
+
