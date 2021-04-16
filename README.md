@@ -49,5 +49,6 @@ http://localhost:8081
 5) gateway-service
 `
 
-![Diagram](https://user-images.githubusercontent.com/54174687/115062603-26890200-9f08-11eb-94e3-c58e32f4581d.PNG)
+![image](https://user-images.githubusercontent.com/54174687/115062730-4a4c4800-9f08-11eb-8a0e-29e6bfecaeeb.png)
+
 
