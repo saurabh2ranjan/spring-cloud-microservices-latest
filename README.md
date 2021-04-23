@@ -8,7 +8,7 @@ s.Kcxhgo63Lw0WEe0SCETwRap4`
 
 # Configure DB credentials in vault
 
-`
+```sh
 C:\Users\pc\Desktop\Programming_Techie\spring-cloud-microservices-latest\spring-cloud-microservices-using-vault (event-bus -> origin)
 λ vault kv put secret/product-service @product-service.json
 Key              Value
@@ -30,7 +30,7 @@ version          1
 
 # Start the Keycloak 
 
-`
+```sh
 C:\Users\pc\Desktop\Microservices Softwares\keycloak-12.0.4\keycloak-12.0.4\bin
 λ standalone.bat -Djboss.http.port=8180
 `
@@ -41,7 +41,7 @@ http://localhost:8081
 
 # Sequences to start the services
 
-`
+
 1) discovery-service
 2) configuration-server
 3) order-service (make sure MySQL DB is up)
