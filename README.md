@@ -2,9 +2,11 @@
 
 # To start the vault server - copy the details of Root Token.
 
-`λ vault server -dev
+```sh
+λ vault server -dev
 
-s.Kcxhgo63Lw0WEe0SCETwRap4`
+s.Kcxhgo63Lw0WEe0SCETwRap4
+```
 
 # Configure DB credentials in vault
 
