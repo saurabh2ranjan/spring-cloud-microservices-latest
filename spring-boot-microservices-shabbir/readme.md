@@ -39,6 +39,24 @@ This project is developed using Spring Boot Microservices - uses below technolog
 - Resilient4J
 - OpenFeign
 
+# Sequence To Start the Services
+
+- service-registry
+- cloud-config-server
+- department-service
+- user-service
+- api-gateway
+- admin-service
+
+
+# Eureka Dashboard
+
+- http://localhost:8761/
+
+![image](https://user-images.githubusercontent.com/54174687/118023993-cc9b2100-b37b-11eb-9840-ffb7a2f3ebfa.png)
+
+
+
 # Once You Deploy the App
 
 - Execute the below statements via Postman or any Rest client.
