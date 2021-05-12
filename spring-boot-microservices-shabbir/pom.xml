@@ -1,0 +1,16 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>microservices-demo</artifactId>
+  <version>1</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>service-registry</module>
+    <module>cloud-config-server</module>
+    <module>department-service</module>
+    <module>user-service</module>
+    <module>api-gateway</module>
+    <module>admin-server</module>
+  </modules>
+</project> 

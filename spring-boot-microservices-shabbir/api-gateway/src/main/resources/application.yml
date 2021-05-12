@@ -1,0 +1,14 @@
+server:
+  port: 9191
+  
+spring:  application:    name: api-gateway
+  cloud:    gateway:      discovery:        locator:          enabled: true
+          lower-case-service-id: true
+      routes:      - id: user-service
+        uri: lb://user-service
+        predicates:        - Path=/users/**
+        
+      - id: order-service
+        uri: lb://department-service
+        predicates:        - Path=/departments/**
+                      

@@ -1,0 +1,11 @@
+
+spring:  cloud:    config:      enabled: true
+      uri: http://localhost:9296
+        application:    name: admin-server
+    
+server:  port: 9090
+  
+eureka:  client:    register-with-eureka: true
+    fetch-registry: true
+  instance:    hostname: localhost
+    prefer-ip-address: true
