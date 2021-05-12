@@ -38,6 +38,7 @@ This project is developed using Spring Boot Microservices - uses below technolog
 - Spring Cloud Config
 - Resilient4J
 - OpenFeign
+- MySQL
 
 # Sequence To Start the Services
 
