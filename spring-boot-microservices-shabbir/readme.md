@@ -56,6 +56,77 @@ This project is developed using Spring Boot Microservices - uses below technolog
 
 ![image](https://user-images.githubusercontent.com/54174687/118023993-cc9b2100-b37b-11eb-9840-ffb7a2f3ebfa.png)
 
+# Note
+
+`@RefreshScope` has been added to the `department-service` and `user-service`, so it make sure to load the latest configurations if someone goes and change the values intentioanlly for good reason - https://github.com/javaHelper/config-server
+
+Then we can make the POST request to load the latest configurations. Note - POST request should be hit using service port and not the API gatway port
+
+Request
+
+```curl
+curl -X POST \
+  http://localhost:8002/actuator/refresh \
+  -H 'cache-control: no-cache' \
+  -H 'postman-token: 604b5888-c4cc-a70e-7849-2680bd4d6c40'
+```
+
+Response
+
+```
+[
+    "property-file.name",
+    "config.client.version",
+    "property-file.description"
+]
+```
+
+Also
+
+Request
+
+```
+http://localhost:9296/user-service/default   or http://localhost:9296/department-service/default
+```
+
+Response
+
+```
+{
+    "name": "user-service",
+    "profiles": [
+        "default"
+    ],
+    "label": null,
+    "version": "82a4558763af6fd6d2f3473a5a226b8303dddb67",
+    "state": null,
+    "propertySources": [
+        {
+            "name": "https://github.com/javaHelper/config-server/file:C:\\Users\\pc\\AppData\\Local\\Temp\\config-repo-9809613937355886812\\user-service.yml",
+            "source": {
+                "spring.datasource.driver-class-name": "com.mysql.cj.jdbc.Driver",
+                "spring.datasource.url": "jdbc:mysql://localhost:3306/test",
+                "spring.datasource.username": "root",
+                "spring.datasource.password": "root",
+                "spring.jpa.hibernate.ddl-auto": "validate",
+                "spring.jpa.generate-ddl": true,
+                "spring.jpa.properties.hibernate.show_sql": true,
+                "spring.jpa.properties.hibernate.format_sql": true,
+                "eureka.client.register-with-eureka": true,
+                "eureka.client.fetch-registry": true,
+                "eureka.instance.prefer-ip-address": true,
+                "eureka.instance.hostname": "localhost",
+                "management.endpoints.web.exposure.include": "*",
+                "management.endpoint.health.show-details": "always",
+                "property-file.name": "Andrew1",
+                "property-file.description": "CTO1"
+            }
+        }
+    ]
+}
+```
+
+
 
 
 # Once You Deploy the App
