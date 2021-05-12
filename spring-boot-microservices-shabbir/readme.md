@@ -29,3 +29,7 @@ INSERT INTO `test`.`user` (`user_id`, `department_id`, `email`, `first_name`, `l
 INSERT INTO `test`.`user` (`user_id`, `department_id`, `email`, `first_name`, `last_name`) VALUES ('3', '2', 'neha.parate@gmail.com', 'Neha', 'Parate');
 INSERT INTO `test`.`user` (`user_id`, `department_id`, `email`, `first_name`, `last_name`) VALUES ('4', '2', 'harshita.dekate@gmail.com', 'Harshita', 'Dekate');
 ```
+
+
+
+![image](https://user-images.githubusercontent.com/54174687/118023124-ca849280-b37a-11eb-80db-11ba7107940a.png)
