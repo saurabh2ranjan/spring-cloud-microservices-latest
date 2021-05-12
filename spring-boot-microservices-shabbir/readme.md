@@ -30,6 +30,65 @@ INSERT INTO `test`.`user` (`user_id`, `department_id`, `email`, `first_name`, `l
 INSERT INTO `test`.`user` (`user_id`, `department_id`, `email`, `first_name`, `last_name`) VALUES ('4', '2', 'harshita.dekate@gmail.com', 'Harshita', 'Dekate');
 ```
 
+This project is developed using Spring Boot Microservices - uses below technologies
 
+- Maven
+- Spring Boot v2.4.2
+- Spring Cloud API Gateway
+- Spring Cloud Config
+- Resilient4J
+- OpenFeign
+
+# Once You Deploy the App
+
+- Execute the below statements via Postman or any Rest client.
+
+Request
+
+```curl
+curl -X GET \
+  http://localhost:9191/departments/1 \
+  -H 'cache-control: no-cache' \
+  -H 'postman-token: e5a32be1-f64f-b348-637e-8ea1fc594435'
+```
+Response
+
+```
+{
+    "departmentId": 1,
+    "departmentName": "Advisory",
+    "departmentAddress": "3rd Cross Street, Achalpur",
+    "departmentCode": "AD-001"
+}
+```
+
+Request
+
+```java
+curl -X GET \
+  http://localhost:9191/users/1 \
+  -H 'cache-control: no-cache' \
+  -H 'postman-token: 6bd67ea7-d985-8ada-7327-e3c43099d8c3'
+```
+
+Response
+
+```java
+{
+    "user": {
+        "userId": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@gmailcom",
+        "departmentId": 1
+    },
+    "department": {
+        "departmentId": 1,
+        "departmentName": "Advisory",
+        "departmentAddress": "3rd Cross Street, Achalpur",
+        "departmentCode": "AD-001"
+    }
+}
+```
 
 ![image](https://user-images.githubusercontent.com/54174687/118023124-ca849280-b37a-11eb-80db-11ba7107940a.png)
