@@ -1,0 +1,17 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>microservices-demo-pt</artifactId>
+  <version>1</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>discovery-server</module>
+    <module>configuration-server</module>
+    <module>product-service</module>
+    <module>order-service</module>
+    <module>inventory-service</module>
+    <module>notification-service</module>
+    <module>api-gateway-service</module>
+  </modules>
+</project> 
