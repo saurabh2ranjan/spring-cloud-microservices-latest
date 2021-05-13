@@ -61,6 +61,8 @@ version          1
 
 # Start the keyloak
 
+User created in the keyloak - Username - testuser , password - test
+
 ```
 C:\Users\pc\Desktop\Microservices Softwares\keycloak-12.0.4\keycloak-12.0.4\bin>standalone.bat -Djboss.http.port=8180
 ```
@@ -104,3 +106,18 @@ http://localhost:8761/
 # Architecture Diagram - 
 
 ![image](https://user-images.githubusercontent.com/54174687/118103295-6358f380-b3f7-11eb-8ee8-c767ff93c3fe.png)
+
+# How to test the app
+
+- http://localhost:8080/api/product - put this url in browser
+
+![image](https://user-images.githubusercontent.com/54174687/118107202-19264100-b3fc-11eb-9ce5-31e5ec9956d8.png)
+
+Put username and password as testuser/test
+
+![image](https://user-images.githubusercontent.com/54174687/118107307-378c3c80-b3fc-11eb-9c2f-4735255dae02.png)
+
+
+
+
+
