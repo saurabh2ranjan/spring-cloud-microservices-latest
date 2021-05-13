@@ -12,6 +12,55 @@ This project is developed using Spring Boot Microservices architecture. In this 
 - MySQL
 - MongoDB
 
+# Enable Hashicorp Vault Locally
+
+This tutorial doesn't cover setup of Hashicorp locally
+- Start the Hashicorp
+
+```curl
+λ vault server -dev
+
+The unseal key and root token are displayed below in case you want to
+seal/unseal the Vault or re-authenticate.
+
+Unseal Key: 18U94gZePd3Ex/TeRKWWZSfj+HVnYU2K73CWtSIYMy4=
+Root Token: s.odPBOcpylPfST9NO6pmTA1yP
+```
+
+Then execute the below steps
+
+```curl
+C:\Users\pc\Desktop\CQRS\springboot-microservices-project\Data (master -> origin)
+λ vault kv put secret/order-service @order-service.json
+Key              Value
+---              -----
+created_time     2021-05-13T07:15:40.1103065Z
+deletion_time    n/a
+destroyed        false
+version          1
+
+C:\Users\pc\Desktop\CQRS\springboot-microservices-project\Data (master -> origin)
+λ vault kv put secret/product-service @product-service.json
+Key              Value
+---              -----
+created_time     2021-05-13T07:15:43.7050413Z
+deletion_time    n/a
+destroyed        false
+version          1
+
+C:\Users\pc\Desktop\CQRS\springboot-microservices-project\Data (master -> origin)
+λ vault kv put secret/inventory-service-credentials @inventory-service-credentials.json
+Key              Value
+---              -----
+created_time     2021-05-13T07:16:13.7870986Z
+deletion_time    n/a
+destroyed        false
+version          1
+
+```
+
+Please make a note of `Root Token` and replace this token value for property `spring.cloud.vault.token`.
+
 # Sequence To Start the Services
 - discovery-server
 - configuration-server
