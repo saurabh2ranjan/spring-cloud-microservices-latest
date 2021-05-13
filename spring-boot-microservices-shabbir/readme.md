@@ -39,6 +39,9 @@ This project is developed using Spring Boot Microservices - uses below technolog
 - Resilient4J
 - OpenFeign
 - MySQL
+- Spring Boot Admin
+- Spring Cloud Bus
+- Zipkin and Sleuth
 
 # Sequence To Start the Services
 
@@ -54,7 +57,8 @@ This project is developed using Spring Boot Microservices - uses below technolog
 
 - http://localhost:8761/
 
-![image](https://user-images.githubusercontent.com/54174687/118023993-cc9b2100-b37b-11eb-9840-ffb7a2f3ebfa.png)
+![image](https://user-images.githubusercontent.com/54174687/118083006-c9378200-b3db-11eb-984f-aeafcf56965a.png)
+
 
 # Note
 
@@ -197,6 +201,13 @@ Response
     "description": "Java Develoepr"
 }
 ```
+
+# Zipkin
+
+- http://localhost:9411/
+
+![image](https://user-images.githubusercontent.com/54174687/118083128-00a62e80-b3dc-11eb-8c31-215100e99188.png)
+
 
 
 
