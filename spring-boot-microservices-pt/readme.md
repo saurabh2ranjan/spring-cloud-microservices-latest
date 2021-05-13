@@ -59,6 +59,26 @@ version          1
 
 ```
 
+# Start the keyloak
+
+```
+C:\Users\pc\Desktop\Microservices Softwares\keycloak-12.0.4\keycloak-12.0.4\bin>standalone.bat -Djboss.http.port=8180
+```
+
+![image](https://user-images.githubusercontent.com/54174687/118106551-5a6a2100-b3fb-11eb-90a2-0062f317f250.png)
+
+![image](https://user-images.githubusercontent.com/54174687/118106596-62c25c00-b3fb-11eb-93e0-13fdf9e33df3.png)
+
+![image](https://user-images.githubusercontent.com/54174687/118106615-66ee7980-b3fb-11eb-8626-64dbb00497b8.png)
+
+![image](https://user-images.githubusercontent.com/54174687/118106623-69e96a00-b3fb-11eb-9ca4-4deca460dc3f.png)
+
+![image](https://user-images.githubusercontent.com/54174687/118106634-6c4bc400-b3fb-11eb-97e4-206cad014b91.png)
+
+![image](https://user-images.githubusercontent.com/54174687/118106645-6eae1e00-b3fb-11eb-8e93-3f8540ad8a78.png)
+
+
+
 Please make a note of `Root Token` and replace this token value for property `spring.cloud.vault.token`.
 
 # Sequence To Start the Services
