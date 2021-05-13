@@ -208,9 +208,24 @@ Response
 
 ![image](https://user-images.githubusercontent.com/54174687/118083128-00a62e80-b3dc-11eb-8c31-215100e99188.png)
 
+Below shows that User Service intercommunicating with the department Service
+
+![image](https://user-images.githubusercontent.com/54174687/118083291-3f3be900-b3dc-11eb-969e-a159af7a49fc.png)
+
+# Spring Boot Admin
+
+http://localhost:9090/applications - Using this Dashboard you can navigate to the various URLs
+
+![image](https://user-images.githubusercontent.com/54174687/118083353-60043e80-b3dc-11eb-88ae-c02a6909f875.png)
 
 
 
-App Design - We've shown how to make the use of `RestTemplate` and `OpenFeign` to make the interservice communication.
 
-![image](https://user-images.githubusercontent.com/54174687/118023124-ca849280-b37a-11eb-80db-11ba7107940a.png)
+
+
+# App Design - 
+
+We've shown how to make the use of `RestTemplate` and `OpenFeign` to make the interservice communication.
+
+![image](https://user-images.githubusercontent.com/54174687/118084949-2e40a700-b3df-11eb-9428-3fe43d62aedb.png)
+
