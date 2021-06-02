@@ -1,3 +1,7 @@
+# Architecture
+
+![One](https://user-images.githubusercontent.com/54174687/120502672-4012da00-c3e0-11eb-8524-547e9e448da3.PNG)
+
 # Steps 
 
 This project is developed using Spring Boot Microservices architecture. In this example - we've used below technologies
@@ -103,10 +107,6 @@ http://localhost:8761/
 
 
 
-
-# Architecture Diagram - 
-
-![image](https://user-images.githubusercontent.com/54174687/118103295-6358f380-b3f7-11eb-8ee8-c767ff93c3fe.png)
 
 Please create database product-service
 
