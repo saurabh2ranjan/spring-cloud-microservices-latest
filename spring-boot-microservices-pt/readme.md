@@ -108,6 +108,18 @@ http://localhost:8761/
 
 ![image](https://user-images.githubusercontent.com/54174687/118103295-6358f380-b3f7-11eb-8ee8-c767ff93c3fe.png)
 
+Please create database product-service
+
+```
+{
+    "_id" : ObjectId("60b72bad53091607fd720fdc"),
+    "name" : "iPhone 12",
+    "description" : "iPhone 12 Gold",
+    "price" : 1230
+}
+```
+
+
 # How to test the app
 
 - http://localhost:8080/api/product - put this url in browser
