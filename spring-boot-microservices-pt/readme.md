@@ -11,6 +11,7 @@ This project is developed using Spring Boot Microservices architecture. In this 
 - Eureaka
 - MySQL
 - MongoDB
+- Java 15
 
 # Enable Hashicorp Vault Locally
 
@@ -86,7 +87,7 @@ Please make a note of `Root Token` and replace this token value for property `sp
 # Sequence To Start the Services
 - discovery-server
 - configuration-server
-- prodict-service
+- product-service
 - order-service
 - inventory-service
 - notification-service
