@@ -134,4 +134,12 @@ Put username and password as testuser/test
 ![image](https://user-images.githubusercontent.com/54174687/118109099-5f7c9f80-b3fe-11eb-81ae-8f238b1b5e10.png)
 
 
+# POST Request
+
+![image](https://user-images.githubusercontent.com/54174687/120593831-ad188500-c45d-11eb-954b-7b5aa980898e.png)
+
+![image](https://user-images.githubusercontent.com/54174687/120593939-c91c2680-c45d-11eb-807d-794ce2c02218.png)
+
+![image](https://user-images.githubusercontent.com/54174687/120594018-e8b34f00-c45d-11eb-8163-7d3ad76c5852.png)
+
 
