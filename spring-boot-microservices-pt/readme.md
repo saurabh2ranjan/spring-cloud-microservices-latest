@@ -2,6 +2,8 @@
 
 ![One](https://user-images.githubusercontent.com/54174687/120502672-4012da00-c3e0-11eb-8524-547e9e448da3.PNG)
 
+Links - https://stackoverflow.com/questions/65904945/why-am-i-not-getting-authenticated-by-my-spring-cloud-gateway-oauth2-client-wh
+
 # Steps 
 
 This project is developed using Spring Boot Microservices architecture. In this example - we've used below technologies
